@@ -19,6 +19,6 @@ Agora voce pode testar o Back-End
 
 ## Wireframes e Diagramas
 
-![MerDER](../docs/MerDer.drawio.png)
+![MerDER](../docs/MerDer.png)
 
 

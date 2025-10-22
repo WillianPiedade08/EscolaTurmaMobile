@@ -38,25 +38,33 @@ function Login() {
   }
 
   return (
-    <main className="min-h-screen flex items-center justify-center p-4" style={{ backgroundColor: '#e6f0ff' }}>
-      <form onSubmit={(e) => { e.preventDefault(); handleLogin(); }} className="w-full max-w-md">
-        <Card className="w-full border-blue-300 border-2 shadow-md">
-          <CardHeader className='text-center'>
-            <CardTitle className="text-blue-700">Bem vindo</CardTitle>
+    <main className="min-h-screen flex items-center justify-center p-4 bg-[#0f172a] text-gray-100">
+      <form
+        onSubmit={(e) => { e.preventDefault(); handleLogin(); }}
+        className="w-full max-w-md"
+      >
+        <Card className="w-full bg-gray-900 border border-gray-700 shadow-xl rounded-2xl">
+          <CardHeader className="text-center border-b border-gray-800 pb-4">
+            <CardTitle className="text-2xl font-semibold text-blue-400">Bem-vindo</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-4 pt-6">
             {alertData && (
-              <Alert className="bg-blue-100 border-blue-300 text-blue-700">
+              <Alert className={`rounded-lg ${
+                alertData.title === 'Sucesso'
+                  ? 'bg-green-900/30 border-green-600 text-green-400'
+                  : 'bg-red-900/30 border-red-600 text-red-400'
+              }`}>
                 <AlertTitle>{alertData.title}</AlertTitle>
                 <AlertDescription>{alertData.message}</AlertDescription>
               </Alert>
             )}
+
             <Input
               type="email"
               placeholder="Email"
               value={email}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
-              className="w-full border-blue-300 focus:ring-2 focus:ring-blue-400"
+              className="w-full bg-gray-800 border-gray-700 text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 rounded-lg"
               required
             />
             <Input
@@ -64,10 +72,13 @@ function Login() {
               placeholder="Senha"
               value={senha}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSenha(e.target.value)}
-              className="w-full border-blue-300 focus:ring-2 focus:ring-blue-400"
+              className="w-full bg-gray-800 border-gray-700 text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 rounded-lg"
               required
             />
-            <Button type="submit" className="w-full bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300">
+            <Button
+              type="submit"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all shadow-md"
+            >
               Entrar
             </Button>
           </CardContent>

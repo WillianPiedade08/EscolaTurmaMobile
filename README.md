@@ -31,13 +31,10 @@ Agora voce pode testar o Back-End e Front-End do Projeto Escola Mobile
 
 ## Wireframes e Diagramas
 
-![MerDER](./docs/MerDer.drawio.png)
+![MerDER](./docs/MerDer.png)
 
-![](./docs/wireframes/Captura%20de%20tela%202025-10-22%20093412.png)
-![](./docs/wireframes/Captura%20de%20tela%202025-10-22%20093436.png)
-![](./docs/wireframes/Captura%20de%20tela%202025-10-22%20093443.png)
-![](./docs/wireframes/Captura%20de%20tela%202025-10-22%20093452.png)
-![](./docs/wireframes/Captura%20de%20tela%202025-10-22%20093458.png)
-
-
-
+![](./docs/wireframes/Captura%20de%20tela%202025-10-22%20140645.png)
+![](./docs/wireframes/Captura%20de%20tela%202025-10-22%20140708.png)
+![](./docs/wireframes/Captura%20de%20tela%202025-10-22%20140720.png)
+![](./docs/wireframes/Captura%20de%20tela%202025-10-22%20140732.png)
+![](./docs/wireframes/Captura%20de%20tela%202025-10-22%20140836.png)
